@@ -138,7 +138,7 @@ app.post('/submit-form', upload.none(), (req, res) => {
 
     const mailOptions = {
         from: email,
-        to: 'iglika.velichkova@gmail.com',
+        to: 'r_nikolov@abv.bg',
         subject: 'Сайт - ново съобщение',
         text: `Име и телефон: ${first_name} ${last_name}\nИмейл: ${email}\nСъобщение: ${message}`
     };

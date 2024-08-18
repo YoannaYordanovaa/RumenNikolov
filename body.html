@@ -122,7 +122,7 @@
               rowHtml += '</div>'; 
               $('#products').html(rowHtml); 
 
-           let totalPages = Math.ceil(data.length / itemsPerPage);
+              let totalPages = Math.ceil(data.length / itemsPerPage);
               let paginationHtml = '';
               
               for(let i = 1; i <= totalPages; i++) {
@@ -135,6 +135,11 @@
               
               $('.pagination-button').click(function() {
                   let btn = $(this);
+
+                  $('html, body').animate({
+                      scrollTop: $('.search').offset().top
+                  }, 100);
+
                   renderPage(btn.data('page'), $('#searchInput').val());
               });
           });
