@@ -127,7 +127,7 @@ main .search input{
   }
 
 .row{
-  margin-top: 1%;
+  margin: 2%;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
@@ -142,7 +142,6 @@ main .search input{
   width: 300px;
   padding: 15px;
   margin: 15px auto;
-  background-color: #fff;
   }
 
 .wrapper:hover .h-bg {
