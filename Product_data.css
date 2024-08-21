@@ -259,7 +259,7 @@ a button:hover{
 
 
   
-@media (max-width: 1350px){
+@media (max-width: 1024px){
 
   .main_section{
     display: flex;
@@ -294,50 +294,9 @@ a button:hover{
     padding-left: 8%;
     padding-right: 8%;
   }
-}
 
 
-
-@media (max-width: 900px){
-  
-  .text{
-    margin-top: 3vh;
-  }
-
-  .text .txt{
-    margin-top: 0;
-  }
-
-  .text .name .descr .nameEN{
-    font-weight: 800;
-    text-align: center;
-    margin: 0 10px;
-  }
-
-  .text .circle{
-    gap: 3px;
-  }
-
-  .text .circle .discount, .noDiscount{
-    min-width: 115px;
-    min-height: 115px;
-    max-width: 115px;
-    max-height: 115px;
-  }
-
-
-/* ..............................Button.............................. */
-
-a button{
-  padding: 5%;
-  margin: auto;
-  display: block;
-  text-align: center;
-  margin-top: 5%;
-  margin-bottom: 5%;
-}
-
-/* ..............................Product_display.............................. */
+  /* ..............................Product_display.............................. */
 
 
   #expandedImg {
@@ -410,5 +369,48 @@ a button{
   div.full figure:not(.expanded) { 
     pointer-events: none;
   }
+
+  /* ..............................Button.............................. */
+
+  a button{
+    padding: 20px;
+    margin: auto;
+    display: block;
+    text-align: center;
+    margin-top: 5%;
+    margin-bottom: 5%;
+  }
+
+}
+
+
+
+@media (max-width: 900px){
+  
+  .text{
+    margin-top: 3vh;
+  }
+
+  .text .txt{
+    margin-top: 0;
+  }
+
+  .text .name .descr .nameEN{
+    font-weight: 800;
+    text-align: center;
+    margin: 0 10px;
+  }
+
+  .text .circle{
+    gap: 3px;
+  }
+
+  .text .circle .discount, .noDiscount{
+    min-width: 115px;
+    min-height: 115px;
+    max-width: 115px;
+    max-height: 115px;
+  }
+
 
 }

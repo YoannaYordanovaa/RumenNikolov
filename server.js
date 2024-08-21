@@ -11,6 +11,7 @@ require('dotenv').config();
 
 app.use(express.static(__dirname));
 
+// ........................Database........................ //
 
 const db = mysql.createConnection({
   host: process.env.DB_HOST,
@@ -112,13 +113,14 @@ app.get('/getPersonalhygiene', (req, res) => {
 
 app.get('/getProductDetails/:productId', (req, res) => {
   const productId = req.params.productId;
-  let sql = 'SELECT * FROM Rumen_table2 WHERE id = ?';
+  let sql = 'SELECT * FROM Rumen_table WHERE id = ?';
   db.query(sql, [productId], (err, result) => {
     if (err) throw err;
     res.send(result[0]); 
   });
 });
 
+// ........................Nodemailer........................ //
 
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
@@ -155,6 +157,7 @@ app.post('/submit-form', upload.none(), (req, res) => {
 });
 
 
+
 app.get('/', (req, res) => {
     res.sendFile(__dirname + '/products.html');
   });
@@ -168,6 +171,7 @@ app.get('/:page', (req, res, next) => {
       }
   });
 });
+
 
 
 app.listen(3000, () => {

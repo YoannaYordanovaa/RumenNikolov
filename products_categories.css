@@ -35,16 +35,6 @@
   text-wrap: nowrap;
 }
 
-.text h2{
-  font-size: 70px;
-  padding-top: 3%;
-}
-
-.text h2 a{
-  color: #ffffff;
-}
-
-
 /*------------------ Button ------------------*/
 
 a{
@@ -76,9 +66,43 @@ a button:hover{
 
 /*------------------ Main ------------------*/
 
-main .search{
-  padding-top: 5%;
+.search_filter{
+  display: flex;
+  flex-direction: row;
+  align-items: end;
+  justify-content: flex-end;
+  gap: 1%;
+}
+
+.sort_filter{
   text-align: right;
+}
+
+#sortOptions {
+  -webkit-appearance: none;  
+  -moz-appearance: none;   
+  appearance: none;        
+  background-color: #fff;   
+  color: #222222;              
+  padding: 12px 20px;            
+  font-size: 16px;           
+  border: 1px solid #ccc;    
+  border-radius: 2px;        
+  box-sizing: border-box; 
+  margin-top: 1%; 
+  font-family: 'Montserrat', sans-serif;  
+  background-image: url(images/arrow-down-short.svg);
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+}
+
+.sort option{
+  text-align: left;
+}
+
+main .search{
+  text-align: right;
+  margin-top: 5%;
   }
 
 main .search h2{
@@ -92,7 +116,7 @@ main .search #searchInput{
   }
 
 main .search input{
-  width: 20%;
+  width: 100%;
   padding: 12px 20px;
   margin-top: 1%;
   }
@@ -100,8 +124,6 @@ main .search input{
 #searchInput:focus {
   outline: none;
   }
-
-
 
 /*------------------ Products_display ------------------*/
 
@@ -282,6 +304,7 @@ main .search input{
 
 /*------------------ Pagination ------------------*/
 
+
 main #pagination {
   display: flex;
   justify-content: center;
@@ -318,30 +341,48 @@ main #pagination button {
 }
 
 
-
 @media (max-width: 1290px){
-
-
-  main .search input{
-    width: 100%;
-    }
-
-  main .search{
-    padding-top: 16%;
-    margin: 0 2%;
-    }
-
-  a button{
-    padding: 5%;
+  
+  .cover{
+    height: 30vh;
+    margin-top: 18px;
   }
 
-  .cover {
-    height: 40vh;
+  .cover img{
+    height: 100%;
+    width: auto;
   }
 
   .cover .text h1{
     text-wrap: wrap;
     font-size: 36px;
+  }
+
+   .search_filter{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0;
+  }
+
+  .search{
+    padding-top: 20px;
+    order: 1;
+    }
+
+  .sort_filter{
+    order: 2;
+    margin-top: 5px;
+  }
+
+  #sortOptions{
+    padding: 12px 10px;
+    order: 2;
+  }
+
+  a button{
+    padding: 5%;
   }
 
 

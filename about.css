@@ -1,6 +1,20 @@
+
 .cover{
-   position: relative;
-   background-color: black;
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  background-color: #000000;
+}
+
+.cover img{
+  opacity: 0.3;
+  position: relative;
+  height: auto;
+  width: 100%;
+  margin-top: 67px;
 }
 
 .cover .text{
@@ -17,19 +31,6 @@
     font-weight: 800;
 }
 
-.cover .text p{
-    font-size: 30px;
-    font-weight: 300;
-    padding: 5%;
-}
-
-.cover img{
-  opacity: 0.35;
-  position: relative;
-  width: 100%;
-  
-}
-
 .cover .text h2{
   font-size: 70px;
   padding-top: 3%;
@@ -39,6 +40,11 @@
   color: #ffffff;
 }
 
+.cover .text p{
+  font-size: 30px;
+  font-weight: 300;
+  padding: 5%;
+}
 
 /* -----------------------------Button----------------------------- */
 
@@ -48,14 +54,12 @@ a{
 
 a button{
     all: unset;
-    padding: 2%;
+    padding: 15px 20px;
     background-color: #5cc19e;
     color: white;
     font-size: 16px;
     cursor: pointer;
     box-shadow: none;
-    margin-top: 5%;
-    margin-bottom: 5%;
     border-radius: 0.2rem;
     box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
 }
@@ -67,14 +71,12 @@ a button:hover{
 
 button{
   all: unset;
-  padding: 2%;
+  padding: 15px 20px;
   background-color: #5cc19e;
   color: white;
   font-size: 16px;
   cursor: pointer;
   box-shadow: none;
-  margin-top: 5%;
-  margin-bottom: 5%;
   border-radius: 0.2rem;
   box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
 }
@@ -84,7 +86,7 @@ button:hover{
   box-shadow: none;
 }
 
-/* -----------------------------Button----------------------------- */
+/* -----------------------------About----------------------------- */
 
 .about{
     display: flex;
@@ -92,23 +94,29 @@ button:hover{
     margin-top: 8%;
     margin-bottom: 5%;
     gap: 10%;
+    color: #000000;
 }
 
 .about img{
    height: 100%;
    max-width: 540px;
     padding-left: 10%;
-    background-color: #5cc19e30;
+    background-color: #5cc19e;
 }
 
 .about .text_about{
     padding-right: 10%;
     line-height: 1.5;
+    
 }
 
 .about .text_about p{
     text-align: justify;
     padding-top: 3%;
+}
+
+.about .text_about button{
+  margin-top: 3%;
 }
 
 /* -----------------------------Product_display----------------------------- */
@@ -124,11 +132,11 @@ button:hover{
   flex-wrap: nowrap; 
   flex-direction: row;
   justify-content: flex-start;
-  background-color: #5cc19e30;
   overflow-x: hidden; 
   overflow-y: hidden; 
   padding: 10px; 
   gap: 10px; 
+  background-color: #5cc19e30;
   
   }
 
@@ -301,40 +309,55 @@ button:hover{
   text-transform: uppercase;
   white-space: nowrap;
   }
-
-  /* -----------------------------Product_display----------------------------- */
-
+  
   .button{
     display: block;
-    width: 50%;
     margin: auto;
     text-align: center;
+    margin-top: 3%;
+    margin-bottom: 3%;
   }
+/* -----------------------------Contacts----------------------------- */
+
 
   .contacts{
-    background-color: black;
     position: relative;
+    background-color: #000000;
+    overflow: hidden;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    height: 100%;
   }
 
-  .contacts img{
-    width: 100%;
+  .contacts .mobile{
+    display: none;
+  }
+
+  .contacts .web{
     opacity: 0.35;
+    width: auto;
+    height: 100%;
   }
 
   .contacts .container{
     display: flex;
-    gap: 8%;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     color: white;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+    left: 0;
+    right: 0;
+    transform: translate(0, 0);
+    position: absolute;
+    max-width: 99%; 
+    max-height: 99%;
   }
 
   .contacts .container .left-side{
     text-align: center;
     background-color: #5cc19e;
-    padding: 8%;
+    padding: 5%;
     border-radius: 0.3rem;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   }
@@ -352,12 +375,16 @@ button:hover{
   .contacts .container .left-side .id{
     padding-top: 20%;
   }
+
+  .container .right-side{
+    width: 35%;
+  }
   
   .container .right-side h1{
     text-align: center;
     padding-bottom: 3%;
   }
-  
+
   .container .right-side ::placeholder{
     font-family: 'Montserrat', sans-serif;
   }
@@ -400,25 +427,21 @@ button:hover{
   }
 
   .right-side button{
-    padding: 3%;
     text-align: center;
     margin: auto;
     display: block;
+    margin-top: 10px;
   }
   
   @media (max-width: 900px){
 
-    .cover{
-      height: 100vh;
-      width: 100%;
-      overflow: hidden;
-      display: flex;
-      justify-content: center; 
-      align-items: center; 
-    }
-
-    .cover .text{
-      top: 46vh;
+    .cover img{
+      display: block;
+      opacity: 0.3;
+      position: relative;
+      height: 100%;
+      width: auto;
+      
     }
 
     .cover .text h1{
@@ -431,17 +454,8 @@ button:hover{
       padding: 8% 0;
     }
 
-    .cover img{
-      display: block;
-      opacity: 0.3;
-      position: relative;
-      height: 100%;
-      width: auto;
-      
-    }
-
     a button{
-      padding: 4%;
+      padding: 18px;
       margin-bottom: 0;
       margin-top: 0;
     }
@@ -476,38 +490,28 @@ button:hover{
       margin-top: 5%;
       margin-bottom: 5%;
     }
-    
-    .contacts{
-      width: 100%;
-      overflow: hidden;
-      display: flex;
-      justify-content: center; 
-      align-items: center; 
-      margin-top: 5%;
+
+    .contacts .web{
+      display: none;
     }
 
-    .contacts img{
-      height: 100%;
+    .contacts .mobile{
+      display: block;
+      opacity: 0.35;
       width: auto;
+      height: 100%;
     }
 
     .contacts .container{
-      display: flex;
       flex-direction: column;
-      top: 5%;
-      left: 0;
-      right: 0;
-      transform: translate(0, 0);
     }
 
     .contacts .container .left-side{
-      margin-left: 3%;
-      margin-right: 3%;
+      width: 95%;
     }
 
     .contacts .container .right-side{
-      margin-left: 2%;
-      margin-right: 2%;
+      width: 95%;
     }
 
     .container .right-side h1{
@@ -516,7 +520,7 @@ button:hover{
     }
 
     .right-side button{
-      padding: 4%;
+      margin-top: 10px;
     }
   
 
