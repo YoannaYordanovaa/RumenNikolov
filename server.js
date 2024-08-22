@@ -159,7 +159,7 @@ app.post('/submit-form', upload.none(), (req, res) => {
 
 
 app.get('/', (req, res) => {
-    res.sendFile(__dirname + '/products.html');
+    res.sendFile(__dirname + '/about.html');
   });
   
 
