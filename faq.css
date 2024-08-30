@@ -1,51 +1,45 @@
-
-main .text_main{
-    position: relative;
-    margin: 8%;
-    background-color: #5cc19e30;
-    padding: 3%;
-    line-height: 1.5;
-    border-radius: 2rem;
+main .text_main {
+  position: relative;
+  margin: 8%;
+  background-color: #5cc19e30;
+  padding: 3%;
+  line-height: 1.5;
+  border-radius: 2rem;
 }
 
-main .text_main h1{
-    text-align: center;
-    margin-bottom: 3%;
+main .text_main h1 {
+  text-align: center;
+  margin-bottom: 3%;
 }
 
-main .text_main p{
-    margin-bottom: 3%;
+main .text_main p {
+  margin-bottom: 3%;
 }
 
-main .text_main a{
-    word-wrap: break-word
-      
+main .text_main a {
+  word-wrap: break-word;
 }
-
 
 @media (max-width: 900px) {
+  main .text_main {
+    position: relative;
+    margin-top: 30%;
+    padding: 5%;
+  }
 
-    main .text_main{
-        position: relative;
-        margin-top: 30%;
-        padding: 5%;
-    }
+  main .text_main h1 {
+    padding-bottom: 15%;
+  }
 
-    main .text_main h1{
-        padding-bottom: 15%;
-    }
+  main .text_main h2 {
+    text-align: center;
+    margin-bottom: 3%;
+    font-size: 20px;
+  }
 
-    main .text_main h2{
-        text-align: center;
-        margin-bottom: 3%;
-        font-size: 20px;
-    }
-
-    main .text_main p{
-        margin-bottom: 10%;
-        text-align: justify;
-        font-size: 16px;
-    }
-
-
+  main .text_main p {
+    margin-bottom: 10%;
+    text-align: justify;
+    font-size: 16px;
+  }
 }

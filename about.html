@@ -1,355 +1,480 @@
 <!DOCTYPE html>
 
 <html lang="bg">
-    <head>
-        <!-- Google Tag Manager -->
-        <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-        })(window,document,'script','dataLayer','GTM-PNHKP4Q8');</script>
-        <!-- End Google Tag Manager -->
-        <!-- Global site tag (gtag.js) - Google Analytics -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-1Y1PHMBX0T"></script>
-        <script>
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
+  <head>
+    <!-- Google Tag Manager -->
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-PNHKP4Q8");
+    </script>
+    <!-- End Google Tag Manager -->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-1Y1PHMBX0T"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-            gtag('config', 'G-1Y1PHMBX0T');
-        </script>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Румен Николов</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="about.css">
-        <link rel="stylesheet" href="header.css">
-        <link rel="stylesheet" href="footer.css">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Marck+Script&amp;display=swap">
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link rel="icon" href="images/icon.png">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    </head>
-    <body>
+      gtag("config", "G-1Y1PHMBX0T");
+    </script>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Румен Николов</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="about.css" />
+    <link rel="stylesheet" href="header.css" />
+    <link rel="stylesheet" href="footer.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Marck+Script&amp;display=swap"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="icon" href="images/icon.png" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  </head>
+  <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript
+      ><iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-PNHKP4Q8"
+        height="0"
+        width="0"
+        style="display: none; visibility: hidden"
+      ></iframe
+    ></noscript>
+    <!-- End Google Tag Manager (noscript) -->
 
-        <!-- Google Tag Manager (noscript) -->
-        <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PNHKP4Q8"
-        height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-        <!-- End Google Tag Manager (noscript) -->
+    <header id="header"></header>
 
-        <header id="header"></header>
+    <div id="cookieConsent">
+      <p>
+        С цел подобряване на обслужването, платформата на www.rumen-aloe.com
+        използва <a href="cookies.html" target="_blank">“бисквитки"</a>
+        <button id="acceptCookies">Приемам</button>
+        <button id="rejectCookies">Отказвам</button>
+      </p>
+    </div>
 
-        <div id="cookieConsent">
-            <p>С цел подобряване на обслужването, платформата на www.rumen-aloe.com използва <a href="cookies.html" target="_blank">“бисквитки"</a>
-            <button id="acceptCookies">Приемам</button>
-            <button id="rejectCookies">Отказвам</button>
-            </p>
+    <main>
+      <div class="cover">
+        <img src="images/cover.jpg" alt="" />
+        <div class="text">
+          <h1>Добре дошли!</h1>
+          <p>
+            Моето име е <b>Румен Николов</b> и съм тук за да ви запозная с
+            ползите от редовната употреба на алое вера!
+          </p>
+          <h2>
+            <a title="about" href="#about"
+              ><i class="bi bi-arrow-down-circle"></i
+            ></a>
+          </h2>
+        </div>
+      </div>
+
+      <div id="about"></div>
+
+      <div class="about">
+        <img src="images/Rumen.png" alt="" />
+        <div class="text_about">
+          <h2>Здравей!</h2>
+          <p>
+            Казвам се Румен и съм част от Форевър Ливинг Продуктс. Ако си
+            запознат с компанията вероятно знаеш, че това е най-големият
+            производител на алое вера в Света. Моето приключение с Форевър
+            започва малко след препоръка на голямата ми дъщеря. Не ми беше
+            необходимо много време за да осъзная всички позли от използваните
+            продукти и не след дълго взех решенито да споделя своя опит и с
+            всички останали. Семейството ми, приятели, колеги.. имаше по нещо за
+            всеки. В момента се радвам на възможността да споделя и с по-широка
+            аудитория, така че ако и ти искаш да разбереш за всички ползи от
+            редовна употреба на алое вера, свържи се с мен с радост ще отговоря
+            на всичките ти въпроси!
+          </p>
+          <a href="#contacts"><button type="button">Свържи се с мен</button></a>
+        </div>
+      </div>
+
+      <!--------------------------------- Images row --------------------------------->
+
+      <div class="row">
+        <div class="wrapper">
+          <div class="box-up">
+            <img
+              class="img"
+              src="https://iglika.me/products_img/Product_details_JPG/1000b.jpg"
+              alt=""
+            />
+            <div class="img-info">
+              <div class="info-inner">
+                <span class="p-id">1000</span>
+                <span class="p-name">Forever Aloe Vera Gel</span>
+                <span class="p-name2">Гел от Алое Вера</span>
+              </div>
+              <div class="description">
+                Със съдържание на над 99,7% чист гел от вътрешността на листата
+                на алое вера Барбаденсис, който се грижи за храносмилателната
+                система.
+              </div>
+            </div>
+          </div>
+          <div class="box-down">
+            <div class="h-bg">
+              <div class="h-bg-inner"></div>
+            </div>
+            <a class="cart" href="Product_data?id=1000">
+              <span class="price">59.54 лв.</span>
+              <span class="see-more">Виж повече</span>
+            </a>
+          </div>
         </div>
 
-        <main>
-
-            <div class="cover">
-                <img src="images/cover.jpg" alt="">
-                <div class="text">
-                    <h1>Добре дошли!</h1>
-                    <p>Моето име е <b>Румен Николов</b> и съм тук за да ви запозная с ползите от редовната употреба на алое вера!</p>
-                    <h2><a title="about" href="#about"><i class="bi bi-arrow-down-circle"></i></a></h2>
-                </div>
+        <div class="wrapper">
+          <div class="box-up">
+            <img
+              class="img"
+              src="https://iglika.me/products_img/Product_details_JPG/1001b.jpg"
+              alt=""
+            />
+            <div class="img-info">
+              <div class="info-inner">
+                <span class="p-id">1001</span>
+                <span class="p-name">Forever Aloe Mango</span>
+                <span class="p-name2">Алое Манго</span>
+              </div>
+              <div class="description">
+                Подкрепете храносмилателната система и се насладете на
+                невероятния манго вкус!
+              </div>
             </div>
-
-            <div id="about"></div>
-
-            <div class="about">
-                <img src="images/Rumen.png" alt="">
-                <div class="text_about">
-                    <h2>Здравей!</h2>
-                    <p>Казвам се Румен и съм част от Форевър Ливинг Продуктс. Ако си запознат с компанията вероятно знаеш, че това е най-големият производител на алое вера в Света. Моето приключение с Форевър започва малко след препоръка на голямата ми дъщеря. Не ми беше необходимо много време за да осъзная всички позли от използваните продукти и не след дълго взех решенито да споделя своя опит и с всички останали. Семейството ми, приятели, колеги.. имаше по нещо за всеки. В момента се радвам на възможността да споделя и с по-широка аудитория, така че ако и ти искаш да разбереш за всички ползи от редовна употреба на алое вера, свържи се с мен с радост ще отговоря на всичките ти въпроси!</p>
-                    <a href="#contacts"><button type="button">Свържи се с мен</button></a>
-                </div>
+          </div>
+          <div class="box-down">
+            <div class="h-bg">
+              <div class="h-bg-inner"></div>
             </div>
+            <a class="cart" href="Product_data?id=1001">
+              <span class="price">59.54 лв.</span>
+              <span class="see-more">Виж повече</span>
+            </a>
+          </div>
+        </div>
 
-    <!--------------------------------- Images row --------------------------------->
-
-            <div class="row">
-            
-                <div class="wrapper">
-                    <div class="box-up">
-                    <img class="img" src="https://iglika.me/products_img/Product_details_JPG/1000b.jpg" alt="">
-                    <div class="img-info">
-                        <div class="info-inner">
-                        <span class="p-id">1000</span>
-                        <span class="p-name">Forever Aloe Vera Gel</span>
-                        <span class="p-name2">Гел от Алое Вера</span>
-                        </div>
-                        <div class="description">Със съдържание на над 99,7% чист гел от вътрешността на листата на алое вера Барбаденсис, който се грижи за храносмилателната система.</div>
-                    </div>
-                    </div>
-                    <div class="box-down">
-                    <div class="h-bg">
-                        <div class="h-bg-inner"></div>
-                    </div>
-                    <a class="cart" href="Product_data?id=1000">
-                        <span class="price">59.54 лв.</span>
-                        <span class="see-more">Виж повече</span>
-                    </a>
-                    </div>
-                </div>
-
-                <div class="wrapper">
-                    <div class="box-up">
-                    <img class="img" src="https://iglika.me/products_img/Product_details_JPG/1001b.jpg" alt="">
-                    <div class="img-info">
-                        <div class="info-inner">
-                        <span class="p-id">1001</span>
-                        <span class="p-name">Forever Aloe Mango</span>
-                        <span class="p-name2">Алое Манго</span>
-                        </div>
-                        <div class="description">Подкрепете храносмилателната система и се насладете на невероятния манго вкус!</div>
-                    </div>
-                    </div>
-                    <div class="box-down">
-                    <div class="h-bg">
-                        <div class="h-bg-inner"></div>
-                    </div>
-                    <a class="cart" href="Product_data?id=1001">
-                        <span class="price">59.54 лв.</span>
-                        <span class="see-more">Виж повече</span>
-                    </a>
-                    </div>
-                </div>
-
-                <div class="wrapper">
-                    <div class="box-up">
-                    <img class="img" src="https://iglika.me/products_img/Product_details_JPG/1002b.jpg" alt="">
-                    <div class="img-info">
-                        <div class="info-inner">
-                        <span class="p-id">1002</span>
-                        <span class="p-name">Forever Aloe Berry Nectar</span>
-                        <span class="p-name2">Алое Бери Нектар</span>
-                        </div>
-                        <div class="description"> 90,7% чист гел от алое вера плюс натурални плодови концентрати за подкрепа на вашето здраве!</div>
-                    </div>
-                    </div>
-                    <div class="box-down">
-                    <div class="h-bg">
-                        <div class="h-bg-inner"></div>
-                    </div>
-                    <a class="cart" href="Product_data?id=1002">
-                        <span class="price">59.54 лв.</span>
-                        <span class="see-more">Виж повече</span>
-                    </a>
-                    </div>
-                </div>
-
-                <div class="wrapper">
-                    <div class="box-up">
-                    <img class="img" src="https://iglika.me/products_img/Product_details_JPG/1075b.jpg" alt="">
-                    <div class="img-info">
-                        <div class="info-inner">
-                        <span class="p-id">1075</span>
-                        <span class="p-name">Forever Aloe Peaches</span>
-                        <span class="p-name2">Алое и праскови</span>
-                        </div>
-                        <div class="description">Подобрете храносмилането си със силата на алоето и се насладете на вкуса на сладки и сочни праскови.</div>
-                    </div>
-                    </div>
-                    <div class="box-down">
-                    <div class="h-bg">
-                        <div class="h-bg-inner"></div>
-                    </div>
-                    <a class="cart" href="Product_data?id=1075">
-                        <span class="price">59.54 лв.</span>
-                        <span class="see-more">Виж повече</span>
-                    </a>
-                    </div>
-                </div>
-
-                <div class="wrapper">
-                    <div class="box-up">
-                    <img class="img" src="https://iglika.me/products_img/Product_details_JPG/1003b.jpg" alt="">
-                    <div class="img-info">
-                        <div class="info-inner">
-                        <span class="p-id">1003</span>
-                        <span class="p-name">Aloe Vera Gel TriPack</span>
-                        <span class="p-name2">АГел от Алое Вера ТриПак</span>
-                        </div>
-                        <div class="description">Троен пакет Гел от Алое Вера!</div>
-                    </div>
-                    </div>
-                    <div class="box-down">
-                    <div class="h-bg">
-                        <div class="h-bg-inner"></div>
-                    </div>
-                    <a class="cart" href="Product_data?id=1003">
-                        <span class="price">178.61</span>
-                        <span class="see-more">Виж повече</span>
-                    </a>
-                    </div>
-                </div>
-
-                <div class="wrapper">
-                    <div class="box-up">
-                    <img class="img" src="https://iglika.me/products_img/Product_details_JPG/1005b.jpg" alt="">
-                    <div class="img-info">
-                        <div class="info-inner">
-                        <span class="p-id">1005</span>
-                        <span class="p-name">Aloe Berry Nectar TriPak</span>
-                        <span class="p-name2">Алое Бери Нектар ТриПак</span>
-                        </div>
-                        <div class="description">Троен пакет Алое Бери нектар!</div>
-                    </div>
-                    </div>
-                    <div class="box-down">
-                    <div class="h-bg">
-                        <div class="h-bg-inner"></div>
-                    </div>
-                    <a class="cart" href="Product_data?id=1005">
-                        <span class="price">178.61</span>
-                        <span class="see-more">Виж повече</span>
-                    </a>
-                    </div>
-                </div>
-
-                <div class="wrapper">
-                    <div class="box-up">
-                    <img class="img" src="https://iglika.me/products_img/Product_details_JPG/1004b.jpg" alt="">
-                    <div class="img-info">
-                        <div class="info-inner">
-                        <span class="p-id">1004</span>
-                        <span class="p-name">Forever Aloe Peach TriPak</span>
-                        <span class="p-name2">Алое Праскова ТриПак</span>
-                        </div>
-                        <div class="description">Троен пакет Алое Праскова!</div>
-                    </div>
-                    </div>
-                    <div class="box-down">
-                    <div class="h-bg">
-                        <div class="h-bg-inner"></div>
-                    </div>
-                    <a class="cart" href="Product_data?id=1004">
-                        <span class="price">178.61</span>
-                        <span class="see-more">Виж повече</span>
-                    </a>
-                    </div>
-                </div>
-
+        <div class="wrapper">
+          <div class="box-up">
+            <img
+              class="img"
+              src="https://iglika.me/products_img/Product_details_JPG/1002b.jpg"
+              alt=""
+            />
+            <div class="img-info">
+              <div class="info-inner">
+                <span class="p-id">1002</span>
+                <span class="p-name">Forever Aloe Berry Nectar</span>
+                <span class="p-name2">Алое Бери Нектар</span>
+              </div>
+              <div class="description">
+                90,7% чист гел от алое вера плюс натурални плодови концентрати
+                за подкрепа на вашето здраве!
+              </div>
             </div>
-            
-            <div class="button"><a href="shop"><button type="button">Пазарувай с отстъпка!</button></a></div>
-
-    <!--------------------------------- Contacts --------------------------------->
-
-            <div class="contacts" id="contacts">
-                <img class="web" src="images/contacts.jpg" alt="">
-                <img class="mobile" src="images/contacts_mobile.jpg" alt="">
-
-                <div class="container">
-
-                    <div class="left-side">
-                    <h1>Контакти</h1>
-                    <h2>Румен Николов</h2>
-                    <p><i class="bi bi-telephone icon-white"></i>&nbsp;+359 889 909 814 </p>
-                    <p><i class="bi bi-envelope icon-white"></i>&nbsp;&nbsp;r_nikolov@abv.bg</p>
-                    <p class="id">Идентификационен номер: <br> 359-000-031-473 </p>
-                    </div>
-            
-                    <div class="right-side">
-                    <h1>Контактна форма</h1>
-                    <form id="contact-form" action="/submit-form" method="post">
-                        <input placeholder="Име*" name="first_name" id="first_name" type="text" required>
-                        <input placeholder="Телефон" name="last_name" id="last_name" type="text">
-                        <input id="email" placeholder="Email*" name="email" type="email" required>
-                        <textarea id="message" placeholder="Съобщение*" name="message"></textarea>
-                        <p>*С натискане на бутона "Изпрати", Вие се съгласявате да предоставите личните си данни за използване спрямо нуждите на сайта. </p>
-                    <button type="submit">Изпрати</button>
-                    </form>
-                    </div>
-            
-                </div>
+          </div>
+          <div class="box-down">
+            <div class="h-bg">
+              <div class="h-bg-inner"></div>
             </div>
+            <a class="cart" href="Product_data?id=1002">
+              <span class="price">59.54 лв.</span>
+              <span class="see-more">Виж повече</span>
+            </a>
+          </div>
+        </div>
 
-        </main>
+        <div class="wrapper">
+          <div class="box-up">
+            <img
+              class="img"
+              src="https://iglika.me/products_img/Product_details_JPG/1075b.jpg"
+              alt=""
+            />
+            <div class="img-info">
+              <div class="info-inner">
+                <span class="p-id">1075</span>
+                <span class="p-name">Forever Aloe Peaches</span>
+                <span class="p-name2">Алое и праскови</span>
+              </div>
+              <div class="description">
+                Подобрете храносмилането си със силата на алоето и се насладете
+                на вкуса на сладки и сочни праскови.
+              </div>
+            </div>
+          </div>
+          <div class="box-down">
+            <div class="h-bg">
+              <div class="h-bg-inner"></div>
+            </div>
+            <a class="cart" href="Product_data?id=1075">
+              <span class="price">59.54 лв.</span>
+              <span class="see-more">Виж повече</span>
+            </a>
+          </div>
+        </div>
 
-        <script>
-            
-            document.addEventListener('DOMContentLoaded', function() {
-                const cookieConsentBanner = document.getElementById('cookieConsent');
-                const cookiesAccepted = localStorage.getItem('cookiesAccepted');
+        <div class="wrapper">
+          <div class="box-up">
+            <img
+              class="img"
+              src="https://iglika.me/products_img/Product_details_JPG/1003b.jpg"
+              alt=""
+            />
+            <div class="img-info">
+              <div class="info-inner">
+                <span class="p-id">1003</span>
+                <span class="p-name">Aloe Vera Gel TriPack</span>
+                <span class="p-name2">АГел от Алое Вера ТриПак</span>
+              </div>
+              <div class="description">Троен пакет Гел от Алое Вера!</div>
+            </div>
+          </div>
+          <div class="box-down">
+            <div class="h-bg">
+              <div class="h-bg-inner"></div>
+            </div>
+            <a class="cart" href="Product_data?id=1003">
+              <span class="price">178.61</span>
+              <span class="see-more">Виж повече</span>
+            </a>
+          </div>
+        </div>
 
-                if (cookiesAccepted === 'true') {
-                    // Cookies accepted
-                    console.log("Cookies have been accepted.");
-                    // Push to dataLayer
-                    window.dataLayer = window.dataLayer || [];
-                    window.dataLayer.push({ 'event': 'cookieConsent', 'CookieConsent': true });
-                } else if (cookiesAccepted === 'false') {
-                    // Cookies rejected
-                    console.log("Cookies have been rejected.");
-                    window.dataLayer = window.dataLayer || [];
-                    window.dataLayer.push({ 'event': 'cookieConsent', 'CookieConsent': false });
-                } else {
-                    // Show the cookie consent banner
-                    cookieConsentBanner.style.display = 'block';
-                }
+        <div class="wrapper">
+          <div class="box-up">
+            <img
+              class="img"
+              src="https://iglika.me/products_img/Product_details_JPG/1005b.jpg"
+              alt=""
+            />
+            <div class="img-info">
+              <div class="info-inner">
+                <span class="p-id">1005</span>
+                <span class="p-name">Aloe Berry Nectar TriPak</span>
+                <span class="p-name2">Алое Бери Нектар ТриПак</span>
+              </div>
+              <div class="description">Троен пакет Алое Бери нектар!</div>
+            </div>
+          </div>
+          <div class="box-down">
+            <div class="h-bg">
+              <div class="h-bg-inner"></div>
+            </div>
+            <a class="cart" href="Product_data?id=1005">
+              <span class="price">178.61</span>
+              <span class="see-more">Виж повече</span>
+            </a>
+          </div>
+        </div>
 
-                document.getElementById('acceptCookies').onclick = function() {
-                    // Accept cookies
-                    localStorage.setItem('cookiesAccepted', 'true');
-                    cookieConsentBanner.style.display = 'none';
+        <div class="wrapper">
+          <div class="box-up">
+            <img
+              class="img"
+              src="https://iglika.me/products_img/Product_details_JPG/1004b.jpg"
+              alt=""
+            />
+            <div class="img-info">
+              <div class="info-inner">
+                <span class="p-id">1004</span>
+                <span class="p-name">Forever Aloe Peach TriPak</span>
+                <span class="p-name2">Алое Праскова ТриПак</span>
+              </div>
+              <div class="description">Троен пакет Алое Праскова!</div>
+            </div>
+          </div>
+          <div class="box-down">
+            <div class="h-bg">
+              <div class="h-bg-inner"></div>
+            </div>
+            <a class="cart" href="Product_data?id=1004">
+              <span class="price">178.61</span>
+              <span class="see-more">Виж повече</span>
+            </a>
+          </div>
+        </div>
+      </div>
 
-                    // Push to dataLayer
-                    window.dataLayer = window.dataLayer || [];
-                    window.dataLayer.push({ 'event': 'cookieConsent', 'CookieConsent': true });
-                };
+      <div class="button">
+        <a href="shop"><button type="button">Пазарувай с отстъпка!</button></a>
+      </div>
 
-                document.getElementById('rejectCookies').onclick = function() {
-                    // Reject cookies
-                    localStorage.setItem('cookiesAccepted', 'false');
-                    cookieConsentBanner.style.display = 'none';
+      <!--------------------------------- Contacts --------------------------------->
 
-                    // Push to dataLayer
-                    window.dataLayer = window.dataLayer || [];
-                    window.dataLayer.push({ 'event': 'cookieConsent', 'CookieConsent': false });
-                };
-            });
+      <div class="contacts" id="contacts">
+        <img class="web" src="images/contacts.jpg" alt="" />
+        <img class="mobile" src="images/contacts_mobile.jpg" alt="" />
 
-        </script>
+        <div class="container">
+          <div class="left-side">
+            <h1>Контакти</h1>
+            <h2>Румен Николов</h2>
+            <p>
+              <i class="bi bi-telephone icon-white"></i>&nbsp;+359 889 909 814
+            </p>
+            <p>
+              <i class="bi bi-envelope icon-white"></i
+              >&nbsp;&nbsp;r_nikolov@abv.bg
+            </p>
+            <p class="id">
+              Идентификационен номер: <br />
+              359-000-031-473
+            </p>
+          </div>
 
-        <script>
+          <div class="right-side">
+            <h1>Контактна форма</h1>
+            <form id="contact-form" action="/submit-form" method="post">
+              <input
+                placeholder="Име*"
+                name="first_name"
+                id="first_name"
+                type="text"
+                required
+              />
+              <input
+                placeholder="Телефон"
+                name="last_name"
+                id="last_name"
+                type="text"
+              />
+              <input
+                id="email"
+                placeholder="Email*"
+                name="email"
+                type="email"
+                required
+              />
+              <textarea
+                id="message"
+                placeholder="Съобщение*"
+                name="message"
+              ></textarea>
+              <p>
+                *С натискане на бутона "Изпрати", Вие се съгласявате да
+                предоставите личните си данни за използване спрямо нуждите на
+                сайта.
+              </p>
+              <button type="submit">Изпрати</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </main>
 
-            $(document).ready(function(){
-                $("#header").load("header.html");
-            });
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const cookieConsentBanner = document.getElementById("cookieConsent");
+        const cookiesAccepted = localStorage.getItem("cookiesAccepted");
 
+        if (cookiesAccepted === "true") {
+          // Cookies accepted
+          console.log("Cookies have been accepted.");
+          // Push to dataLayer
+          window.dataLayer = window.dataLayer || [];
+          window.dataLayer.push({
+            event: "cookieConsent",
+            CookieConsent: true,
+          });
+        } else if (cookiesAccepted === "false") {
+          // Cookies rejected
+          console.log("Cookies have been rejected.");
+          window.dataLayer = window.dataLayer || [];
+          window.dataLayer.push({
+            event: "cookieConsent",
+            CookieConsent: false,
+          });
+        } else {
+          // Show the cookie consent banner
+          cookieConsentBanner.style.display = "block";
+        }
 
-        </script>
-        
-        <script>
-            
-            document.querySelector('#contact-form').addEventListener('submit', function(event) {
-            event.preventDefault();
+        document.getElementById("acceptCookies").onclick = function () {
+          // Accept cookies
+          localStorage.setItem("cookiesAccepted", "true");
+          cookieConsentBanner.style.display = "none";
 
-            let formData = new FormData(this);
+          // Push to dataLayer
+          window.dataLayer = window.dataLayer || [];
+          window.dataLayer.push({
+            event: "cookieConsent",
+            CookieConsent: true,
+          });
+        };
 
-            fetch('/submit-form', {
-                method: 'POST',
-                body: formData
-            })
-            .then(response => response.json())
-            .then(data => {
-                alert(data.message);
+        document.getElementById("rejectCookies").onclick = function () {
+          // Reject cookies
+          localStorage.setItem("cookiesAccepted", "false");
+          cookieConsentBanner.style.display = "none";
+
+          // Push to dataLayer
+          window.dataLayer = window.dataLayer || [];
+          window.dataLayer.push({
+            event: "cookieConsent",
+            CookieConsent: false,
+          });
+        };
+      });
+    </script>
+
+    <script>
+      $(document).ready(function () {
+        $("#header").load("header.html");
+      });
+    </script>
+
+    <script>
+      document
+        .querySelector("#contact-form")
+        .addEventListener("submit", function (event) {
+          event.preventDefault();
+
+          let formData = new FormData(this);
+
+          fetch("/submit-form", {
+            method: "POST",
+            body: formData,
+          })
+            .then((response) => response.json())
+            .then((data) => {
+              alert(data.message);
             })
             .catch((error) => {
-                console.error('Error:', error);
+              console.error("Error:", error);
             });
         });
-
-        </script>
-
-    </body>
-
+    </script>
+  </body>
 </html>
