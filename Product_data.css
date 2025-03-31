@@ -12,20 +12,17 @@
 }
 
 .text h1 {
-  font-size: 40px;
   text-align: center;
 }
 
 .text h2 {
   text-align: center;
-  font-size: 24px;
   font-weight: 400;
 }
 
 .text .txt {
   text-align: justify;
   padding: 30px 5px;
-  font-size: 16px;
 }
 
 .text .name {
@@ -42,7 +39,6 @@
 .text .id {
   text-align: center;
   font-style: italic;
-  font-size: 16px;
   color: #919191;
 }
 
@@ -68,7 +64,6 @@
   flex-direction: column;
   gap: 0;
   z-index: -1;
-  font-size: 16px;
   font-weight: 800;
   background-color: #ff857a;
   color: white;
@@ -82,13 +77,9 @@
   background-color: #5cc19e;
 }
 
-.text .circle .discount span {
-  font-size: 32px;
-}
-
 .text .circle .discount p,
 .noDiscount p {
-  color: #182c00;
+  color: #fff;
 }
 
 #tooltip {
@@ -99,7 +90,6 @@
   border-radius: 4px;
   display: none;
   pointer-events: none;
-  font-size: 12px;
 }
 
 /* ..............................Tab.............................. */
@@ -123,7 +113,6 @@
   cursor: pointer;
   padding: 14px 60px;
   transition: 0.3s;
-  font-size: 16px;
   font-weight: 600;
 }
 
@@ -141,14 +130,12 @@
   display: none;
   padding: 6px 12px;
   border-top: none;
-  font-size: 16px;
   height: 200px;
   text-align: justify;
 }
 
 .tabcontent h2 {
   font-style: normal;
-  font-size: 18px;
   margin-bottom: 1%;
   font-weight: 600;
   padding-top: 20px;
@@ -231,7 +218,6 @@ a button {
   padding: 2%;
   background-color: #5cc19e;
   color: white;
-  font-size: 16px;
   cursor: pointer;
   box-shadow: none;
   border-radius: 0.2rem;

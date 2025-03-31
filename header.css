@@ -1,3 +1,12 @@
+:root {
+  --font-size-small: 0.8rem; 
+  --font-size-base: 1rem;    /* $base-size */
+  --font-size-h3: 1.125rem;  /* $base-size * pow(1.25, 4) */
+  --font-size-h2: 1.5rem;  /* $base-size * pow(1.25, 5) */
+  --font-size-h1: 2rem;  /* $base-size * pow(1.25, 6) */
+}
+
+
 * {
   padding: 0;
   margin: 0;
@@ -12,7 +21,33 @@ html {
 
 body {
   min-height: 100vh;
-  color: #162f26;
+  font-size: var(--font-size-base);
+}
+
+h1 {
+  font-size: var(--font-size-h1);
+}
+
+h2 {
+  font-size: var(--font-size-h2);
+}
+
+h3 {
+  font-size: var(--font-size-h3);
+}
+
+p {
+  font-size: var(--font-size-base);
+  font-weight: 300;
+}
+
+a {
+  font-size: var(--font-size-base);
+  font-weight: 300;
+}
+
+span {
+  font-size: var(--font-size-base);
 }
 
 .no-scroll {
@@ -34,8 +69,7 @@ header {
 }
 
 .logo img {
-  width: 200px;
-  height: 100%;
+  width: 50%;
 }
 
 .logo {
@@ -60,7 +94,6 @@ header .navbar ul li {
 }
 
 header .navbar ul li a {
-  font-size: 20px;
   display: block;
   color: #182c00;
   text-decoration: none;
@@ -129,7 +162,6 @@ header label {
 #cookieConsent button {
   background-color: #5cc19e;
   color: white;
-  font-size: 16px;
   cursor: pointer;
   border: none;
   border-radius: 0.2rem;

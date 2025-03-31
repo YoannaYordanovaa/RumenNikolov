@@ -34,12 +34,10 @@ main .text_main a {
   main .text_main h2 {
     text-align: center;
     margin-bottom: 3%;
-    font-size: 20px;
   }
 
   main .text_main p {
     margin-bottom: 10%;
     text-align: justify;
-    font-size: 16px;
   }
 }

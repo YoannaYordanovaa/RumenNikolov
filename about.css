@@ -25,22 +25,16 @@
   text-align: center;
 }
 
-.cover .text h1 {
-  font-size: 84px;
-  font-weight: 800;
-}
-
 .cover .text h2 {
-  font-size: 70px;
   padding-top: 3%;
 }
 
 .cover .text h2 a {
   color: #ffffff;
+  font-size: 32px;
 }
 
 .cover .text p {
-  font-size: 30px;
   font-weight: 300;
   padding: 5%;
 }
@@ -56,7 +50,6 @@ a button {
   padding: 15px 20px;
   background-color: #5cc19e;
   color: white;
-  font-size: 16px;
   cursor: pointer;
   box-shadow: none;
   border-radius: 0.2rem;
@@ -74,7 +67,6 @@ button {
   padding: 15px 20px;
   background-color: #5cc19e;
   color: white;
-  font-size: 16px;
   cursor: pointer;
   box-shadow: none;
   border-radius: 0.2rem;
@@ -243,12 +235,10 @@ button:hover {
 }
 
 .info-inner .p-name {
-  font-size: 18px;
   color: #252525;
 }
 
 .info-inner .p-name2 {
-  font-size: 16px;
   color: #8c8c8c;
 }
 
@@ -288,7 +278,6 @@ button:hover {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-size: 16px;
   color: #182c00;
 }
 
@@ -301,7 +290,6 @@ button:hover {
   top: 50%;
   left: 110%;
   transform: translate(-50%, -50%);
-  font-size: 12px;
   color: #fff;
   letter-spacing: 0.045em;
   text-transform: uppercase;
@@ -362,7 +350,6 @@ button:hover {
 .contacts .container .left-side h2 {
   padding-bottom: 20%;
   font-weight: 300;
-  font-size: 18px;
 }
 
 .contacts .container .left-side p {
@@ -426,10 +413,6 @@ textarea:focus {
   font-weight: 600;
 }
 
-form p {
-  font-size: 12px;
-}
-
 .right-side button {
   text-align: center;
   margin: auto;
@@ -446,12 +429,7 @@ form p {
     width: auto;
   }
 
-  .cover .text h1 {
-    font-size: 60px;
-  }
-
   .cover .text p {
-    font-size: 24px;
     font-weight: 300;
     padding: 8% 0;
   }
@@ -468,6 +446,7 @@ form p {
 
   .about img {
     padding-left: 0;
+    background-color: #fff;
   }
 
   .about .text_about {
@@ -478,7 +457,6 @@ form p {
   .about .text_about h2 {
     text-align: center;
     padding: 5% 0;
-    font-size: 24px;
   }
 
   .about .text_about button {

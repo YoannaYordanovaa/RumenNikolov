@@ -9,7 +9,6 @@ main {
 
 .main_section h1 {
   text-align: center;
-  font-size: 36px;
   margin-bottom: 4%;
 }
 
@@ -28,7 +27,6 @@ main {
 }
 .main_section .main_text .main_text_left .p1,
 .main_text .main_text_right .p4 {
-  font-size: 18px;
   text-align: center;
   font-weight: 600;
   padding-bottom: 3%;
@@ -42,7 +40,6 @@ main {
 
 .main_section .main_text_left .circle,
 .main_text_right .circle {
-  font-size: 48px;
   font-weight: 700;
   color: white;
   background-color: #ff857a;

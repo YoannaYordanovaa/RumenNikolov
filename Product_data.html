@@ -1,34 +1,7 @@
 <!DOCTYPE html>
 <html lang="bg">
   <head>
-    <!-- Google Tag Manager -->
-    <script>
-      (function (w, d, s, l, i) {
-        w[l] = w[l] || [];
-        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
-        var f = d.getElementsByTagName(s)[0],
-          j = d.createElement(s),
-          dl = l != "dataLayer" ? "&l=" + l : "";
-        j.async = true;
-        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
-        f.parentNode.insertBefore(j, f);
-      })(window, document, "script", "dataLayer", "GTM-PNHKP4Q8");
-    </script>
-    <!-- End Google Tag Manager -->
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=G-1Y1PHMBX0T"
-    ></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag("js", new Date());
-
-      gtag("config", "G-1Y1PHMBX0T");
-    </script>
+    
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>Информация за продукт</title>
@@ -61,27 +34,10 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   </head>
   <body>
-    <!-- Google Tag Manager (noscript) -->
-    <noscript
-      ><iframe
-        src="https://www.googletagmanager.com/ns.html?id=GTM-PNHKP4Q8"
-        height="0"
-        width="0"
-        style="display: none; visibility: hidden"
-      ></iframe
-    ></noscript>
-    <!-- End Google Tag Manager (noscript) -->
+
 
     <header id="header"></header>
 
-    <div id="cookieConsent">
-      <p>
-        С цел подобряване на обслужването, платформата на www.rumen-aloe.com
-        използва <a href="cookies.html" target="_blank">“бисквитки"</a>
-        <button id="acceptCookies">Приемам</button>
-        <button id="rejectCookies">Отказвам</button>
-      </p>
-    </div>
 
     <!-- -------------------Main part--------------------->
 
@@ -118,14 +74,14 @@
 
           <a href="shop#-5" target="_blank" rel="noopener noreferrer">
             <div class="discount">
-              <span>-5%</span>
+              <h1>-5%</h1>
               <p class="discount5"></p>
             </div>
           </a>
 
           <a href="shop#-30" target="_blank" rel="noopener noreferrer">
             <div class="discount">
-              <span>-30%</span>
+              <h1>-30%</h1>
               <p class="discount30"></p>
             </div>
           </a>
@@ -192,61 +148,7 @@
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
     ></script>
 
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        const cookieConsentBanner = document.getElementById("cookieConsent");
-        const cookiesAccepted = localStorage.getItem("cookiesAccepted");
-
-        if (cookiesAccepted === "true") {
-          // Cookies accepted
-          console.log("Cookies have been accepted.");
-          // Push to dataLayer
-          window.dataLayer = window.dataLayer || [];
-          window.dataLayer.push({
-            event: "cookieConsent",
-            CookieConsent: true,
-          });
-        } else if (cookiesAccepted === "false") {
-          // Cookies rejected
-          console.log("Cookies have been rejected.");
-          window.dataLayer = window.dataLayer || [];
-          window.dataLayer.push({
-            event: "cookieConsent",
-            CookieConsent: false,
-          });
-        } else {
-          // Show the cookie consent banner
-          cookieConsentBanner.style.display = "block";
-        }
-
-        document.getElementById("acceptCookies").onclick = function () {
-          // Accept cookies
-          localStorage.setItem("cookiesAccepted", "true");
-          cookieConsentBanner.style.display = "none";
-
-          // Push to dataLayer
-          window.dataLayer = window.dataLayer || [];
-          window.dataLayer.push({
-            event: "cookieConsent",
-            CookieConsent: true,
-          });
-        };
-
-        document.getElementById("rejectCookies").onclick = function () {
-          // Reject cookies
-          localStorage.setItem("cookiesAccepted", "false");
-          cookieConsentBanner.style.display = "none";
-
-          // Push to dataLayer
-          window.dataLayer = window.dataLayer || [];
-          window.dataLayer.push({
-            event: "cookieConsent",
-            CookieConsent: false,
-          });
-        };
-      });
-    </script>
-
+   
     <script>
       $(document).ready(function () {
         $("#header").load("header.html");

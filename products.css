@@ -27,15 +27,14 @@
 }
 
 .cover .text .first {
-  font-size: 26px;
   line-height: 1.2;
   text-align: center;
 }
 
 .cover .text .first .aloe {
   color: #5cc19e;
-  font-size: 48px;
   font-family: "Marck Script", cursive;
+  font-size: 32px;
 }
 
 .cover .text .main_text {
@@ -43,7 +42,6 @@
 }
 
 .cover .last {
-  font-size: 18px;
   font-weight: 500;
   text-align: center;
   padding-top: 5%;
@@ -51,15 +49,20 @@
 }
 
 .text h2 {
-  font-size: 70px;
   padding-top: 3%;
 }
 
 .text h2 a {
   color: #ffffff;
+  font-size: 40px;
 }
 
 /*------------------ Main ------------------*/
+
+.main {
+  margin-left: 4%;
+  margin-right: 4%;
+}
 
 .search_filter {
   display: flex;
@@ -80,7 +83,6 @@
   background-color: #fff;
   color: #222222;
   padding: 12px 20px;
-  font-size: 16px;
   border: 1px solid #ccc;
   border-radius: 2px;
   box-sizing: border-box;
@@ -103,11 +105,6 @@ main .search {
 main .search h2 {
   color: #182c00;
   margin-left: 2%;
-  font-size: 18px;
-}
-
-main .search #searchInput {
-  font-size: 16px;
 }
 
 main .search input {
@@ -228,12 +225,10 @@ main .search input {
 }
 
 .info-inner .p-name {
-  font-size: 18px;
   color: #252525;
 }
 
 .info-inner .p-name2 {
-  font-size: 16px;
   color: #8c8c8c;
 }
 
@@ -273,7 +268,6 @@ main .search input {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-size: 16px;
   color: #182c00;
 }
 
@@ -286,7 +280,6 @@ main .search input {
   top: 50%;
   left: 110%;
   transform: translate(-50%, -50%);
-  font-size: 12px;
   color: #fff;
   letter-spacing: 0.045em;
   text-transform: uppercase;
@@ -308,7 +301,6 @@ main #pagination button {
   transition: all 0.2s;
   border-width: thin;
   border-radius: 6rem;
-  font-size: 16px;
   background-color: white;
   color: #000000;
   border: #5cc19e solid 0.5px;
@@ -331,6 +323,11 @@ main #pagination button {
 }
 
 @media (max-width: 1290px) {
+  .main {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
   .cover .text {
     top: 20%;
     left: 3%;
@@ -339,7 +336,6 @@ main #pagination button {
   }
 
   .cover .text .first {
-    font-size: 24px;
     line-height: 1;
     padding-bottom: 2%;
   }
@@ -372,5 +368,6 @@ main #pagination button {
   .search {
     padding-top: 16%;
     order: 1;
+    width: 90%;
   }
 }
