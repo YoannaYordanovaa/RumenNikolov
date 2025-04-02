@@ -34,18 +34,17 @@
 .cover .text .first .aloe {
   color: #5cc19e;
   font-family: "Marck Script", cursive;
-  font-size: 32px;
+  font-size: 48px;
 }
 
 .cover .text .main_text {
-  margin-top: 2%;
+  margin: 2rem 0;
 }
 
 .cover .last {
   font-weight: 500;
   text-align: center;
-  padding-top: 5%;
-  padding-bottom: 5%;
+
 }
 
 .text h2 {
@@ -54,7 +53,7 @@
 
 .text h2 a {
   color: #ffffff;
-  font-size: 40px;
+  font-size: 48px;
 }
 
 /*------------------ Main ------------------*/
@@ -281,8 +280,6 @@ main .search input {
   left: 110%;
   transform: translate(-50%, -50%);
   color: #fff;
-  letter-spacing: 0.045em;
-  text-transform: uppercase;
   white-space: nowrap;
 }
 
@@ -303,22 +300,22 @@ main #pagination button {
   border-radius: 6rem;
   background-color: white;
   color: #000000;
-  border: #5cc19e solid 0.5px;
+  border: #ff857a solid 0.5px;
   display: inline;
 }
 
 #pagination .pagination-button:hover {
-  background-color: #5cc19e;
+  background-color: #ff857a;
   color: #ffffff;
 }
 
 #pagination .pagination-button.active {
-  background-color: #5cc19e;
+  background-color: #ff857a;
   color: #ffffff;
 }
 
 #pagination .pagination-button:focus {
-  background-color: #5cc19e;
+  background-color: #ff857a;
   color: #ffffff;
 }
 
@@ -330,8 +327,8 @@ main #pagination button {
 
   .cover .text {
     top: 20%;
-    left: 3%;
-    right: 3%;
+    left: 1rem;
+    right: 1rem;
     transform: translate(0);
   }
 

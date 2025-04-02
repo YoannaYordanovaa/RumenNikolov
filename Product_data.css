@@ -1,15 +1,16 @@
 .main_section {
-  margin-top: 80px;
-  gap: 15px;
+  margin: 0 4rem;
+  gap: 1rem;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-direction: row;
+  align-items: flex-start;
   justify-content: center;
 }
 
 .text {
-  margin-top: 60px;
+  margin-top: 8rem;
   line-height: 1.5;
+  width: 100%;
 }
 
 .text h1 {
@@ -19,11 +20,6 @@
 .text h2 {
   text-align: center;
   font-weight: 400;
-}
-
-.text .txt {
-  text-align: justify;
-  padding: 30px 5px;
 }
 
 .text .name {
@@ -66,7 +62,7 @@
   gap: 0;
   z-index: -1;
   font-weight: 800;
-  background-color: #ff857a;
+  background-color: #5cc19e;
   color: white;
   width: 120px;
   height: 120px;
@@ -75,7 +71,7 @@
 }
 
 .text .discount:hover {
-  background-color: #5cc19e;
+  background-color: #1eab7a;
 }
 
 .text .circle .discount p,
@@ -93,7 +89,6 @@
   pointer-events: none;
 }
 
-
 /* ..............................Product_display.............................. */
 
 #quad_mobile,
@@ -104,14 +99,15 @@
 div#quad {
   width: 100%;
   display: flex;
-  align-items: center;
-margin-top: 2%;
+  margin-top: 8rem;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 div#quad figure {
   margin: 3px;
-  width: 50%;
+  width: 70%;
   height: auto;
   transition: 1s;
   display: inline-block;
@@ -150,7 +146,7 @@ div#quad figure:nth-child(3) {
 }
 
 .expanded {
-  transform: scale(1.5);
+  transform: scale(1.2);
   z-index: 5;
 }
 
@@ -167,7 +163,7 @@ a {
 a button {
   all: unset;
   padding: 2%;
-  background-color: #5cc19e;
+  background-color: #ff857a;
   color: white;
   cursor: pointer;
   box-shadow: none;
@@ -178,11 +174,11 @@ a button {
   text-align: center;
   display: block;
   margin-top: 3%;
-  width: 100%;
+  width: 70%;
 }
 
 a button:hover {
-  background-color: #2f8264;
+  background-color: #ff5949;
   box-shadow: none;
 }
 
@@ -192,6 +188,9 @@ a button:hover {
   .main_section {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4rem;
   }
 
   .text {
@@ -202,25 +201,6 @@ a button:hover {
   .text .txt {
     text-align: justify;
     padding: 0;
-  }
-
-  .tab1 {
-    min-height: 650px;
-  }
-
-  .tab1 .tab button {
-    padding: 6% 4%;
-  }
-
-  .tab1 .tab {
-    display: flex;
-    flex-direction: row;
-  }
-
-  .tabcontent {
-    height: 300px;
-    padding-left: 8%;
-    padding-right: 8%;
   }
 
   /* ..............................Product_display.............................. */
@@ -249,7 +229,7 @@ a button:hover {
 
   #quad_mobile figure {
     margin: 3px;
-    width: 80%;
+    width: 100%;
     height: auto;
     transition: 1s;
     display: inline-block;
@@ -299,12 +279,13 @@ a button:hover {
   /* ..............................Button.............................. */
 
   a button {
-    padding: 20px;
-    margin: auto;
-    display: block;
-    text-align: center;
+    padding: 1rem;
     margin-top: 5%;
     margin-bottom: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
   }
 }
 
@@ -324,7 +305,7 @@ a button:hover {
   }
 
   .text .circle {
-    gap: 3px;
+    gap: 1%;
   }
 
   .text .circle .discount,

@@ -34,7 +34,7 @@ main {
 
 .main_section .main_text .main_text_left .p1 span,
 .main_text .main_text_right .p4 span {
-  color: #ff857a;
+  color: #5cc19e;
   font-weight: 700;
 }
 
@@ -42,7 +42,7 @@ main {
 .main_text_right .circle {
   font-weight: 700;
   color: white;
-  background-color: #ff857a;
+  background-color: #5cc19e;
   border-radius: 50%;
   width: 140px;
   height: 140px;
@@ -59,14 +59,14 @@ main {
 
 .main_section .main_text_left .p2 a,
 .main_text_right .p5 a {
-  color: #5cc19e;
+  color: #ff857a;
   text-decoration: none;
   font-weight: 700;
 }
 
 .main_section .main_text_left .p2 a:hover,
 .main_text_right .p5 a:hover {
-  color: #ff857a;
+  color: #ff5949;
 }
 
 .main_section .main_text_left ul li,

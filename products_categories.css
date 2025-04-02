@@ -1,64 +1,7 @@
-.cover {
-  position: relative;
-  height: 50vh;
-  width: 100%;
-  overflow: hidden;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #000000;
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-}
-
-.cover img {
-  display: block;
-  opacity: 0.5;
-  position: relative;
-  margin-top: 68px;
-  width: 100%;
-}
-
-.cover .text {
-  position: absolute;
-  top: 55%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: white;
+.text {
   text-align: center;
-}
-
-.cover .text h1 {
-  font-weight: 800;
-  text-align: center;
-  text-wrap: nowrap;
-}
-
-/*------------------ Button ------------------*/
-
-a {
-  text-decoration: none;
-}
-
-a button {
-  all: unset;
-  padding: 2%;
-  background-color: #5cc19e;
-  color: white;
-  cursor: pointer;
-  box-shadow: none;
-  margin-top: 5%;
-  margin-bottom: 5%;
-  margin: auto;
-  display: block;
-  text-align: center;
-  border-radius: 0.2rem;
-  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
-    rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
-}
-
-a button:hover {
-  background-color: #2f8264;
-  box-shadow: none;
+  margin-top: 8rem;
+  color: #182c00;
 }
 
 /*------------------ Main ------------------*/
@@ -286,9 +229,8 @@ main .search input {
   left: 110%;
   transform: translate(-50%, -50%);
   color: #fff;
-  letter-spacing: 0.045em;
-  text-transform: uppercase;
   white-space: nowrap;
+  font-weight: 300;
 }
 
 /*------------------ Pagination ------------------*/
@@ -308,21 +250,21 @@ main #pagination button {
   border-radius: 6rem;
   background-color: white;
   color: #000000;
-  border: #5cc19e solid 0.5px;
+  border: #ff857a solid 0.5px;
 }
 
 #pagination .pagination-button:hover {
-  background-color: #5cc19e;
+  background-color: #ff857a;
   color: #ffffff;
 }
 
 #pagination .pagination-button.active {
-  background-color: #5cc19e;
+  background-color: #ff857a;
   color: #ffffff;
 }
 
 #pagination .pagination-button:focus {
-  background-color: #5cc19e;
+  background-color: #ff857a;
   color: #ffffff;
 }
 
